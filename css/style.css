@@ -1,0 +1,50 @@
+/* Общие стили */
+body {
+    max-width: 1366px;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: normal;
+    color: #122659;
+    background: #FEFCFA;
+}
+a{
+    text-decoration: none;
+    color: #122659;
+}
+a:hover {
+    opacity: 0.7;
+}
+a:focus,
+a:active {
+    opacity: 0.2;
+}
+.button {
+    font-weight: 500;
+    background: #FFD787;
+    border-radius: 35px;
+    color: #122659;
+    padding: 20px 35px;
+    display: inline-block;
+    vertical-align: middle;
+    appearance: none;
+    border: none;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.button:active {
+    opacity: 0.5;
+}
+.content-container {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 10px;
+}
+.content-container-small{
+    margin: 0 auto;
+    width: 970px;
+    
+}
+
+/*font-family: 'Rubik', "Arial", sans-serif;*/
