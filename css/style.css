@@ -1,13 +1,49 @@
 /* Общие стили */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    min-width: initial;
+    height: 1px;
+    min-height: initial;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+html,
 body {
-    max-width: 1366px;
-    font-size: 1em;
+  height: 100%;
+  width: 100%;
+}
+body {
+    position: relative;
+    min-width: 320px;
+    font-size: 18px;
     line-height: 20px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: normal;
     color: #122659;
     background: #FEFCFA;
+    margin:0;
+    word-wrap: normal;
 }
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
 a{
     text-decoration: none;
     color: #122659;
@@ -45,6 +81,25 @@ a:active {
     margin: 0 auto;
     width: 970px;
     
+}
+
+/* Стили для HEADER*/
+.header-block .header-toggle{
+    display:none;
+}
+.header-block{
+    outline: 1px solid red;
+    display: grid;
+    grid-template-columns: 160px 700px 200px;
+    align-items: center;
+}
+.header-block img{
+
+}
+.nav-list{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
 }
 
 /*font-family: 'Rubik', "Arial", sans-serif;*/
