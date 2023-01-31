@@ -15,6 +15,7 @@
   }
 html,
 body {
+scroll-behavior: smooth;
   height: 100%;
   width: 100%;
 }
@@ -83,23 +84,62 @@ a:active {
     
 }
 
+/*Стили для кнопки НАВЕРХ*/
+.up-button {
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    bottom: 75px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    color: #122659;
+    opacity: 0.6;
+    background-color: #FFD787;
+    
+  }
+.up-button:hover{
+    opacity: 1;
+}
+  .shown {
+    display: inline-block;
+  }
+
+
 /* Стили для HEADER*/
 .header-block .header-toggle{
     display:none;
 }
 .header-block{
-    outline: 1px solid red;
-    display: grid;
-    grid-template-columns: 160px 700px 200px;
+    display: flex;
     align-items: center;
+    height:103px;
+    
+    
 }
 .header-block img{
 
 }
 .nav-list{
+    width: 100%;
+    padding-left: 0;
+    outline: 1px solid red;
     display:flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
-
+.nav-list{
+    
+}
+.header__contacts{
+    margin-left: auto;
+}
 /*font-family: 'Rubik', "Arial", sans-serif;*/
