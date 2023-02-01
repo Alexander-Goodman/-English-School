@@ -75,7 +75,6 @@ a:active {
     opacity: 0.5;
 }
 .content-container {
-    border: 1px solid red;
     margin: 0 auto;
     width: 1170px;
     padding: 0 5px;
@@ -158,23 +157,51 @@ font-size: 36px;
     margin-left: auto;
 }
 
-/* Стили для PROMO*/
+/* Стили для PROMO */
 .main-block__mask-table {
     display: none;
   }
+.promo{
+    background-image: url("../img/background-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+}
 .promo-block{
+    
     position: relative;
     width: 45%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.promo-block::before,
+.promo-block::after {
+  position: absolute;
+  content: "";
+}
+.promo-block::before {
+    width: 106px;
+    height: 84px;
+    background-image: url("../img/car.svg");
+    background-size: cover;
+    top: 30px;
+    left: -100px;
+  }
+  
+  .promo-block::after {
+    width: 91px;
+    height: 62px;
+    background-image: url("../img/cloud.svg");
+    top: 60px;
+    left: 1000px;
+  }
 .promo-heading{
     font-family: 'Rubik';
-font-style: normal;
-font-weight: 500;
-font-size: 42px;
-margin-top: 0;
-  margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    margin-top: 130px;
+    margin-bottom: 15px;
 }
 .promo-subtitle{
     font-family: 'Rubik';
@@ -198,6 +225,22 @@ margin-top: 0;
 .education-heading{
     margin-bottom: 60px;
 }
+.education-block{
+    position: relative;
+}
+.education-block::before,
+.education-block::after{
+    content: ' ';
+    position: absolute;
+}
+.education-block::before{
+    width: 90px;
+    height: 117px;
+    background-image: url(../img/girl.svg);
+    background-size: cover;
+    top: 20px;
+    left: -150px;
+}
 .education-list{
     list-style: none;
     display: flex;
@@ -206,7 +249,15 @@ margin-top: 0;
     justify-content: space-between;
 }
 .education-list h3{
-    font-size: 20px;
+    font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+.education-text{
+    font-size: 16px;
+  line-height: 23px;
 }
 .education-item-1{
     width: 440px;
