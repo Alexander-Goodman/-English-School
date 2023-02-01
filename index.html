@@ -78,7 +78,7 @@
                     <span class="visually-hidden">Открыть меню</span>
                     <svg width="25" height="14">
                         <use xlink:href="#icon-burger"></use>
-                      </svg>
+                    </svg>
                   </button>
                   <button type="button" id="button-close" class="header-toggle header-toggle-close">
                     <span class="visually-hidden">Закрыть меню</span>
@@ -116,9 +116,10 @@
     <main>
         <h1 class="visually-hidden">Школа английского языка для детей Clever Baby</h1>
         <section class="promo">
-            <div class="content-container">
+            <div class="content-container-small">
                 <div class="promo-block">
-                    <h2 class="promo-heading">Английский язык <span class="promo-subtitle">для детей от 2 до 7 лет.</span></h2>
+                    <h2 class="promo-heading">Английский язык </h2>
+                    <p class="promo-subtitle">для детей от 2 до 7 лет.</p>
                     <p class="promo-text">Гармоничное развитие детей и обучение
                         через полное погружение в языковую среду</p>
                     <a href="#" class="button promo-button">Записаться</a>
@@ -138,21 +139,21 @@
         </section>
 
         <section class="education">
-            <div class="content-container">
+            <div class="content-container-small">
                 <h2 class="education-heading">Как проходит обучение</h2>
                 <div class="education-block">
                     <ul class="education-list">
-                        <li class="education-item">
-                            <h3 class="education-subtitle"><b>Играя — обучаем, обучая — развиваем</b></h3>
+                        <li class="education-item-1">
+                            <h3 class="education-subtitle">Играя — обучаем, обучая — развиваем</h3>
                             <p class="education-text">Мы взяли все самое лучшее из традиционных    и современных методик обучения и развития детей. 
                                 Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам,
                                  а познают его через игру, сказки, книги и музыку. </p>
                             <p class="education-text">Наша методика также включает в себя обучение по программе Cambridge. 
                                 Благодаря этому, наши ученики без труда сдают международные и государственные экзамены. </p>
                         </li>
-                        <li class="education-item">
-                            <h3 class="education-subtitle education-video"><b>Посмотрите, как проходят наши занятия</b></h3>
-                            <img src="img/video@1x.png" alt="На картинке играющий малыш">
+                        <li class="education-item-2">
+                            <h3 class="education-subtitle education-video">Посмотрите, как проходят наши занятия</h3>
+                            <!--<img src="img/video@1x.png" alt="На картинке играющий малыш" width="431" height="231">-->
                             <video class="education-video" id="video" src="video/sample.mp4" poster="img/video.png" preload="metadata" controls="">
                             </video>
                         </li>
@@ -163,7 +164,7 @@
 
         <section class="types">
             <h2 class="visually-hidden">Виды обучения</h2>
-            <div class="content-conteiner-small">
+            <div class="content-container-small">
                 <ul class="types-list">
                     <li class="types-item types-item-first">
                         <h3 class="types-subtitle">Развитие 10 видов интеллекта</h3>
@@ -186,14 +187,14 @@
         </section>
 
         <section class="groups">
-            <div class="content-container">
+            <div class="content-container-small">
                 <div class="groups-block">
                     <div class="groups-heading-text">
                         <h2 class="groups-heading">Наши группы</h2>
                         <p class="groups-text">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>
                     </div>
                     <ul class="groups-list">
-                        <li class="groups-item">
+                        <li class="groups-item groups-item-blue ">
                         <article class="groups-item-article">
                             <h3 class="groups-item-heading">Бэбики-1</h3>
                             <p class="groups-item-text">1 раз в неделю</p>
@@ -202,7 +203,6 @@
                                 в месяц</p>
                             <a href="#" class="button groups-button button-blue">Записаться</a>
                         </article>
-                            
                         </li>
                         <li class="groups-item groups-item-yellow">
                             <arcticle class="groups-item-article">
@@ -298,7 +298,7 @@
 
         <section class="trial-lesson">
 
-            <svg class="banner__background-desktop" width="1366" height="453" version="1.1" viewBox="0 0 1366 453"
+            <svg class="banner-background-desktop" width="1366" height="453" version="1.1" viewBox="0 0 1366 453"
         preserveAspectRatio="none">
         <g transform="translate(-1.1899 1.1899)">
           <path
@@ -321,7 +321,7 @@
             fill="#5778e7"></path>
         </g>
       </svg>
-      <svg class="banner__background-tablet" width="768" height="450" version="1.1" viewBox="0 0 768 450"
+      <svg class="banner-background-tablet" width="768" height="450" version="1.1" viewBox="0 0 768 450"
         preserveAspectRatio="none">
         <g transform="translate(0 -.66202)">
           <path
@@ -347,7 +347,7 @@
             fill="#5778e7"></path>
         </g>
       </svg>
-      <svg class="banner__background-mobile" width="320" height="384" viewBox="0 0 320 384" preserveAspectRatio="none">
+      <svg class="banner-background-mobile" width="320" height="384" viewBox="0 0 320 384" preserveAspectRatio="none">
         <g transform="translate(.50847 1.6949)">
           <path
             d="m0 192.5v-191.5h7.5386c19.705 0 72.956 4.468 120.46 10.107 14.025 1.6649 27.3 3.0386 29.5 3.0528 2.2 0.01415 13.9-1.1304 26-2.5435 40.653-4.7475 47.907-5.5163 71.5-7.5768 19.248-1.6811 55.801-4.0127 63.25-4.0346 1.6606-0.00488 1.75 9.786 1.75 191.65v191.65l-17.75-0.69179c-27.971-1.0901-80.418-5.8109-118.61-10.676-20.231-2.5772-21.885-2.5603-47.643 0.48457-37.364 4.4168-46.91 5.4298-71 7.5337-19.248 1.6811-55.801 4.0127-63.25 4.0346-1.6606 0.00488-1.75-9.7786-1.75-191.49z"
@@ -389,22 +389,21 @@
             
                 <div class="contacts">
                     <h2 class="contacts-heading">Мы ждем вас</h2>
-                    <dl>
-                        <dt>Приходите к нам:</dt>
-                        <dd>Санкт-Петербург, <br>
-                            ул. Большая Конюшенная, 19</dd>
+                    <div class="contacts-text">
+                        <p><span>Приходите к нам:</span></p>
+                        <p>Санкт-Петербург, <br>
+                            ул. Большая Конюшенная, 19</p>
 
-                        <dt>Режим работы:</dt>
-                        <dd>Пн-Вск, с 9-00 до 20-00</dd>
+                        <p><span>Режим работы:</span></p>
+                        <p>Пн-Вск, с 9-00 до 20-00</p>
 
-                        <dt>Позвоните нам:</dt>
-                        <dd><a href="tel:88129834719">+ 7 (812) 983-47-19</a></dd>
+                        <p><span>Позвоните нам:</span></p>
+                        <p><a href="tel:88129834719">+ 7 (812) 983-47-19</a></p>
 
-                        <dt>Напишите нам:</dt>
-                        <dd><a href="mailto:info@botanika.ru">info@botanika.ru</a></dd>
+                        <p><span>Напишите нам:</span></p>
+                        <p><a href="mailto:info@botanika.ru">info@botanika.ru</a></p>
 
-                        <dt>Мы в соцсетях:</dt>
-                        <dd>
+                        <p><span>Мы в соцсетях:</span></p>
                             <ul class="contacts-social">
                                 <li class="contacts-social-item">
                                     <a href="#" aria-label="Мы в Facebook">
@@ -428,9 +427,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            
-                        </dd>
-                    </dl>
+                    </div>
                 </div>
             <!-- ДЛЯ КАРТЫ
                 <div class="contacts-map" aria-label="Карта с адресом">

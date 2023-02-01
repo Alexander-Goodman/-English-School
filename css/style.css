@@ -41,10 +41,11 @@ html {
   }
   
   img {
-    object-fit: contain;
-    max-width: 100%;
+    object-fit: contain; /*ЧТО ЭТО!!!??*/
     height: auto;
   }
+
+
 a{
     text-decoration: none;
     color: #122659;
@@ -74,14 +75,23 @@ a:active {
     opacity: 0.5;
 }
 .content-container {
+    border: 1px solid red;
     margin: 0 auto;
     width: 1170px;
-    padding: 0 10px;
+    padding: 0 5px;
+    
 }
 .content-container-small{
     margin: 0 auto;
     width: 970px;
     
+    
+}
+h2{
+font-family: 'Rubik',"Arial", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
 }
 
 /*Стили для кнопки НАВЕРХ*/
@@ -121,25 +131,308 @@ a:active {
 .header-block{
     display: flex;
     align-items: center;
-    height:103px;
+    padding-top: 40px;
+    padding-bottom: 38px;
     
     
 }
-.header-block img{
-
+.header-block .logo{
+    margin-right: 4.87%;
 }
 .nav-list{
-    width: 100%;
     padding-left: 0;
-    outline: 1px solid red;
     display:flex;
     list-style: none;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 45.04%;
+    min-width: 533px; 
 }
 .nav-list{
-    
+    font-size: 16px;
+    line-height: 22px;
 }
 .header__contacts{
     margin-left: auto;
+}
+
+/* Стили для PROMO*/
+.main-block__mask-table {
+    display: none;
+  }
+.promo-block{
+    position: relative;
+    width: 45%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.promo-heading{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+margin-top: 0;
+  margin-bottom: 15px;
+}
+.promo-subtitle{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+margin-top: 0;
+  margin-bottom: 19px;
+}
+.promo-text{
+    margin-top: 0;
+  margin-bottom: 40px;
+}
+/* Стили для education*/
+
+.education {
+    position: relative;
+    margin-top: 118px;
+    text-align: center;
+}
+.education-heading{
+    margin-bottom: 60px;
+}
+.education-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-between;
+}
+.education-list h3{
+    font-size: 20px;
+}
+.education-item-1{
+    width: 440px;
+    text-align: left;
+}
+.education-item-2{
+    text-align: center;
+}
+
+/* Стили для TYPES*/
+.types{
+    margin-top: 130px;
+}
+.types-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.types-item{
+    position: relative;
+    width: 50%;
+    padding-top: 45px;
+    padding-right: 160px;
+    margin-bottom: 129px;
+}
+.types-item:nth-of-type(even) {
+    padding-top: 0px;
+    padding-left: 197px;
+    padding-right: 0;
+  }
+.types-item-second {
+    padding-bottom: 45px;
+  }
+  
+.types-item-fourth {
+    margin-top: -26px;
+    padding-bottom: 60px;
+  }
+.types-item::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.types__subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+.types__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+/* Стили для GROUPS*/
+.groups{
+    margin-top:100px;
+    position: relative;
+    padding-bottom: 70px;
+}
+.groups-heading-text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.groups-heading-text h2{
+    margin-top: 5px;
+    
+    
+}
+.groups-heading-text p{
+    margin-top: 0;
+    max-width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+.groups-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.groups-item{
+    text-align: center;
+    border:3px solid #8DD9E5;
+    border-radius: 12px;
+    padding: 60px;
+}
+.groups-item-heading{
+    margin-bottom: 40px;
+}
+.groups-item-blue .button-blue{
+    background-color: #8DD9E5;
+}
+.groups-item-yellow{
+    border:3px solid #FFD787;
+}
+.groups-item-pink{
+    border:3px solid #FEB9CC;
+}
+.groups-item-pink .button-pink{
+    background-color: #FEB9CC;
+}
+.groups-button{
+    margin-top: 40px;
+}
+/* Стили для TEACHERS*/
+.teachers{
+    position: relative;
+    margin-top: 130px;
+}
+.teachers-heading-text{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+    padding-bottom: 60px;
+}
+.teachers-heading-text h2{
+    margin-top: 5px;
+}
+.teachers-heading-text p{
+    margin-top: 0;
+    max-width: 350px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.teachers-block-slider{
+    overflow: hidden;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: -15px;
+}
+.teachers-list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+}
+.teachers-item{
+    margin-right: 30px;
+}
+.teachers-nav{
+    text-align: center;
+    cursor:pointer;
+}
+
+/* Стили для TRIAL*/
+.trial-lesson{
+    position: relative;
+}
+.trial-lesson-block{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin:0 auto;
+}
+.trial-lesson-heading{
+    line-height: 40px;
+}
+.trial-lesson-text{
+    width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+/* Стили для MAP*/
+.map{
+    margin-top: 200px;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+}
+.map img {
+    object-fit: cover;
+    height: 100%;
+  }
+.contacts{
+    position: absolute;
+    top:0px;
+    left:200px;
+    background: #F7FAFC;
+    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    padding: 0 70px 50px 70px;
+}
+.contacts-heading{
+    margin-top: 5px;
+}
+.contacts-text p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contacts-text > p > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.contacts-social{
+    list-style: none;
+}
+.contacts-social-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: inline-block;
+}
+.contacts-social-item a{
+   
+}
+.footer{
+    padding-top: 56px;
+  padding-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
 }
 /*font-family: 'Rubik', "Arial", sans-serif;*/
