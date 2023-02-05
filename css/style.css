@@ -241,6 +241,15 @@ margin-top: 0;
     top: 20px;
     left: -150px;
 }
+.education-block::after{
+    width: 135px;
+    height: 68px;
+    background-image: url(../img/rocket.svg);
+    background-size: cover;
+    top:-150px;
+    right: -70px;
+
+}
 .education-list{
     list-style: none;
     display: flex;
@@ -258,15 +267,79 @@ margin-top: 0;
 .education-text{
     font-size: 16px;
   line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
 }
 .education-item-1{
     width: 440px;
     text-align: left;
+    
 }
 .education-item-2{
     text-align: center;
+    
 }
+.education-item-video{
+    position: relative;
+    border-radius: 12px;
+    width: 431px;
+    height: 231px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.education-item-2 img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: 1;
+  }
 
+  /* ДЛЯ JS */
+.process-video--start-js img {
+    display: none;
+  }
+/*  
+  .education-video {
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 431px;
+    height: 231px;
+    background: transparent;
+  }
+  */
+
+  .education-video-button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 26px);
+    border-radius: 50%;
+    outline: none;
+    background-image: url("../img/icon-play.svg");
+    z-index: 2;
+  }
+
+  /* ДЛЯ JS */
+.process__video--start-js .process__video-button {
+    display: none;
+  }
+  
+.education-video-button:hover,
+.education-video-button:focus,
+.education-video-button:active{
+    opacity: 0.5;
+}
+}
 /* Стили для TYPES*/
 .types{
     margin-top: 130px;
