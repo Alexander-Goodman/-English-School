@@ -16,7 +16,7 @@
 html,
 body {
 scroll-behavior: smooth;
-  height: 100%;
+  
   width: 100%;
 }
 body {
@@ -30,6 +30,8 @@ body {
     background: #FEFCFA;
     margin:0;
     word-wrap: normal;
+    
+    overflow-x: hidden;
 }
 html {
     box-sizing: border-box;
@@ -79,10 +81,12 @@ a:active {
     width: 1170px;
     padding: 0 5px;
     
+    
 }
 .content-container-small{
     margin: 0 auto;
     width: 970px;
+    
     
     
 }
@@ -436,12 +440,28 @@ margin-top: 0;
     font-size: 16px;
     line-height: 23px;
   }
+
 /* Стили для GROUPS*/
 .groups{
-    margin-top:100px;
     position: relative;
     padding-bottom: 70px;
+    background-image: url('../img/background-groups.svg');
+    background-size: 100% 110%;
+    min-height: 803px;
 }
+.groups::before{
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 58px;
+    background-image: url('../img/star.svg');
+    top: 100px;
+    left: 80px;
+}
+.groups-block{
+    padding-top: 180px;
+}
+
 .groups-heading-text{
     display: flex;
     justify-content: space-between;
@@ -449,8 +469,8 @@ margin-top: 0;
 }
 .groups-heading-text h2{
     margin-top: 5px;
-    
-    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .groups-heading-text p{
     margin-top: 0;
@@ -458,9 +478,9 @@ margin-top: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 60px;
 }
 .groups-list{
+    margin-top: 50px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -496,17 +516,44 @@ margin-top: 0;
     position: relative;
     margin-top: 130px;
 }
+.teachers::before,
+.teachers::after{
+    position: absolute;
+    content: '';
+}
+.teachers::before{
+    width: 58px;
+    height: 97px;
+    background-image: url('../img/house.svg');
+    top: -20px;
+    right: 40px;
+}
+.teachers::after{
+    width: 44px;
+    height: 132px;
+    background-image: url('../img/pencil.svg');
+    bottom: 0;
+    left: 10px;
+
+}
 .teachers-heading-text{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     margin-top: 115px;
-    padding-bottom: 60px;
+    
 }
 .teachers-heading-text h2{
-    margin-top: 5px;
+    font-family: "Rubik", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  margin-left: 15px;
+    margin-top: 0;
+  margin-bottom: 0;
 }
 .teachers-heading-text p{
+    line-height: 23px;
     margin-top: 0;
     max-width: 350px;
     font-style: normal;
@@ -516,10 +563,10 @@ margin-top: 0;
 .teachers-block-slider{
     overflow: hidden;
     width: 100%;
-    margin-left: 15px;
     margin-right: -15px;
 }
 .teachers-list{
+    margin-top: 50px;
     list-style: none;
     display: flex;
     padding-left: 0;
@@ -536,15 +583,33 @@ margin-top: 0;
 /* Стили для TRIAL*/
 .trial-lesson{
     position: relative;
+    min-height: 453px;
+    margin-top: 121px;
+    padding-bottom: 50px;
 }
+.trial-lesson svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+.banner-background-tablet,
+.banner-background-mobile {
+    display: none;
+  }
 .trial-lesson-block{
+    position: relative;
     width: 50%;
     text-align: center;
     padding: 20px;
     margin:0 auto;
+    padding-top: 60px;
 }
 .trial-lesson-heading{
+    font-family: "Rubik", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 36px;
     line-height: 40px;
+    color: #ffffff;
 }
 .trial-lesson-text{
     width: 80%;
@@ -552,6 +617,7 @@ margin-top: 0;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 35px;
+  color: #ffffff;
 }
 /* Стили для MAP*/
 .map{
