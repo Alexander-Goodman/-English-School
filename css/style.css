@@ -333,13 +333,14 @@ margin-top: 0;
 .process__video--start-js .process__video-button {
     display: none;
   }
-  
+
 .education-video-button:hover,
 .education-video-button:focus,
 .education-video-button:active{
     opacity: 0.5;
 }
-}
+
+
 /* Стили для TYPES*/
 .types{
     margin-top: 130px;
@@ -353,6 +354,18 @@ margin-top: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
+.types-list::before {
+    position: absolute;
+    content: "";
+    width: 332px;
+    height: 381px;
+    top: 10px;
+    left: 50%;
+    background-image: url("../img/girl.png");
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
 .types-item{
     position: relative;
     width: 50%;
@@ -379,14 +392,49 @@ margin-top: 0;
     background-repeat: no-repeat;
     background-size: cover;
   }
-.types__subtitle {
+.types-item-first::before {
+    width: 182px;
+    height: 61px;
+    top: -25px;
+    right: 85px;
+    background-image: url("../img/decorate-arrow-left-1.svg");
+  }
+.types-item-second::before{
+    width: 140px;
+    height: 105px;
+    top:125px;
+    left: 155px;
+    background-image: url("../img/decorate-arrow-right-1.svg");
+
+}
+.types-item-third::before{
+    width: 138px;
+    height: 126px;
+    background-image: url("../img/decorate-arrow-left-2.svg");
+    top:-100px;
+    left:175px;
+}
+.types-item-fourth::before{
+    width: 180px;
+    height: 80px;
+    background-image: url("../img/decorate-arrow-right-2.svg");
+    top:115px;
+    left: 45px;
+    
+}
+.types-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
     margin-top: 0;
     margin-bottom: 20px;
   }
   
-.types__text {
+.types-text {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 16px;
+    line-height: 23px;
   }
 /* Стили для GROUPS*/
 .groups{
