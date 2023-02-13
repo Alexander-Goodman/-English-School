@@ -604,6 +604,26 @@ margin-top: 0;
     margin:0 auto;
     padding-top: 60px;
 }
+.trial-lesson-block::before,
+.trial-lesson-block::after{
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+}
+.trial-lesson-block::before{
+    width: 153px;
+    height: 126px;
+    background-image: url(../img/rainbow.svg);
+    top:110px;
+    left: -250px;
+}
+.trial-lesson-block::after{
+    width: 118px;
+    height: 133px;
+    background-image: url(../img/boy.svg);
+    top: 130px;
+    right: -150px;
+}
 .trial-lesson-heading{
     font-family: "Rubik", Arial, sans-serif;
     font-weight: 500;
@@ -621,26 +641,42 @@ margin-top: 0;
 }
 /* Стили для MAP*/
 .map{
+    
     margin-top: 200px;
     position: relative;
-    position: relative;
-    overflow: hidden;
+}
+.map::after{
+    position: absolute;
+    content: '';
+    background-image: url(../img/map-pin.svg);
+    width: 32px;
+    height: 39px;
+    top: 145px;
+    right: 605px;
 }
 .map img {
-    object-fit: cover;
+    object-fit: none;
     height: 100%;
+    width: 100%;
   }
+
 .contacts{
     position: absolute;
-    top:0px;
-    left:200px;
+    top:-75px;
+    left:150px;
     background: #F7FAFC;
     box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
     border-radius: 12px;
-    padding: 0 70px 50px 70px;
+    padding: 70px 70px 50px 70px;
+    z-index: 10;
 }
 .contacts-heading{
-    margin-top: 5px;
+    margin-top: 0;
+  margin-bottom: 35px;
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
 }
 .contacts-text p{
     font-family: 'Montserrat';
@@ -656,17 +692,35 @@ margin-top: 0;
 }
 .contacts-social{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 5px;
 }
 .contacts-social-item{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    display: inline-block;
+    margin-right: 15px;
 }
 .contacts-social-item a{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
    
 }
+.contacts-social-item a:hover,
+.contacts-social-item a:focus,
+.contacts-social-item a:active {
+  opacity: 0.5;
+}
+.contacts-social-item svg {
+    display: block;
+  }
+
 .footer{
     padding-top: 56px;
   padding-bottom: 36px;
